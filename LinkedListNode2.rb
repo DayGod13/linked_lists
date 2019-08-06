@@ -23,7 +23,11 @@ def reverse_list(list, previous=nil)
         next_node = list.next_node
         list.next_node = previous
         reverse_list(next_node, list)
+
+    else 
+      return previous
     end
+    
 end
   
   node1 = LinkedListNode.new(37)
@@ -36,4 +40,4 @@ end
 
   revlist = reverse_list(node3)
 
-  print_values(node1)
+  print_values(revlist)

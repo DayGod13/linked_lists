@@ -31,7 +31,7 @@ class Stack
       @data = @data.next_node
     end
 
-end
+
 
 
 def print_values(list_node)
